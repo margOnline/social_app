@@ -64,9 +64,8 @@ describe User do
 
   describe "when the email is not unique" do
     before do
-      user = User.new(:name => 'Duplicate User', :email => 'user@example.com')
-      user.email = @user.email.upcase
-      user.save
+      duplicate_user = @user.dup
+      duplicate_user.save
     end
 
     it { should_not be_valid }
