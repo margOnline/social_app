@@ -18,6 +18,11 @@ namespace :db do
         password_confirmation: password
         )
     end
+    users = User.first(6)
+    35.times do
+      content = Faker::Lorem.sentence(4)
+      users.each { |user| user.microposts.create(content: content) }
+    end
   end
 
 end
