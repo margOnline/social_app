@@ -168,14 +168,6 @@ input {
       border-bottom: 1px solid $grayLighter;
     }
   }
-  .button {
-    float: right;
-    padding: 5px;
-    border: 1px solid $grayLighter;
-  }
-  .btn{
-    float: right;
-  }
 }
 
 /***************** microposts  ******************/
@@ -207,6 +199,9 @@ aside {
   }
 }
 /***************** misc  ******************/
+.btn{
+    float: right;
+  }
 .debug_dump {
   clear:both;
   float: left;
