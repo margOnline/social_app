@@ -209,3 +209,18 @@ aside {
   margin-top: 45px;
   @include box_sizing;
 }
+
+.countdown, .remaining {
+  display:inline;
+  color: $grayLight;
+  float: right;
+}
+.overlimit {
+  color: $red;
+}
+.almostlimit {
+  color: $yellow;
+}
+.nearlimit {
+  color: $green
+}
